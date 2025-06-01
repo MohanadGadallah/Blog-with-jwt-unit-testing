@@ -6,11 +6,11 @@ from sqlalchemy.orm import relationship, Mapped, mapped_column
 from uuid import uuid4
 from sqlalchemy.orm.relationships import _RelationshipDeclared
 from typing import Any
-from blog.database.base import base
+from blog.database.base import Base
 from blog.database.models.Blog_model import Blog
 
 
-class Users(base):
+class Users(Base):
     __tablename__: str = 'Users'
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
     name: Mapped[str]

@@ -8,11 +8,6 @@ def get_settings() -> Settings:
     return Settings(env_file='.env')
 
 
-@lru_cache
-def get_base() -> declarative_base:
-    Base: declarative_base = declarative_base()
-    return Base
-
+Base = declarative_base()
 
 settings: Settings = get_settings()
-base: declarative_base = get_base()
