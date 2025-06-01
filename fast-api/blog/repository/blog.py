@@ -73,7 +73,7 @@ async def get_one(id: int, db: AsyncSession = Depends(get_db)) -> Any | blog_use
     statement: Blog = select(Blog).options(
         joinedload(Blog.creator)).where(Blog.id == id)
     result = await db.execute(statement)
-    blog: blog_schema.show_blog = result.scalar_one_or_none()
+    blog: blog_user_shared.ShowBlog = result.scalar_one_or_none()
     if not blog:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="not found")
