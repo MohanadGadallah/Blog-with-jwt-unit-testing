@@ -1,6 +1,4 @@
-Your `README.md` file looks great! It's structured well and provides all the essential information. There are just a few improvements you could make for clarity, organization, and correcting minor errors (like typos and formatting). Here's a refined version:
 
----
 
 # FastAPI Project for Blogs Website
 
@@ -96,19 +94,5 @@ In the `fast-api` folder, you must create two environment files before running t
 Once the application is running, you can access the API at:  
 `http://localhost:8000`
 
-## Contributing
 
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
 
